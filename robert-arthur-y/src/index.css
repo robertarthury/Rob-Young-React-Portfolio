@@ -6,7 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+:root {
+  --primary: #f5fdc6;
+  --secondary: #f5c396;
+  --tertiary: #d0b17a; 
+  --light: #a89f68;
+  --dark: #41521f;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

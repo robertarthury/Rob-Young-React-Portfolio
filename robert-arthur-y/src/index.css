@@ -7,13 +7,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 :root {
-  --primary: #f5fdc6;
+  --primary: #a89f68;
   --secondary: #f5c396;
   --tertiary: #d0b17a; 
-  --light: #a89f68;
+  --light: #f5fdc6;;
   --dark: #41521f;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-txt {
+  color: #f5fdc6;
+
+}
+.second-text {
+   color: #f5c396;
+}
+
+.dark-backround {
+  background-color: #41521f;
+}
+
+.light-backround {
+  background-color: #d0b17a;
+}
+
+.dark-text {
+  color: #41521f;
 }

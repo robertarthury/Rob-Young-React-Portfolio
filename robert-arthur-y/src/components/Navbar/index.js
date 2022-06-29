@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbar(props) {
   const {
@@ -14,35 +15,36 @@ function Navbar(props) {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory])
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       
           <a href="/" className="ml-3 text-xl">
             <h1>Hi, i'm rob</h1>
           </a>
       <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about" onClick={() => setContactSelected(false)}>
+        <ul className="nav justify-content-center">
+          <li className="nav-item">
+            <a className="nav-link active" href="#about" onClick={() => setContactSelected(false)}>
               <h2>aboutMe</h2>
             </a>
           </li>
-          <li>
-            <a href="#projects" onClick={() => setContactSelected(false)}>
+          <li className="nav-item">
+            <a className="nav-link active" href="#projects" onClick={() => setContactSelected(false)}>
               <h2>projects</h2>
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}><h3>contactMe</h3></span>
+          <li className={`nav-item ${contactSelected && 'navActive'}`}>
+            <span className="nav-link active" onClick={() => setContactSelected(true)}><h3>contactMe</h3></span>
           </li>
           {categories.map((category) => (
             <li
-              className={`mx-1 ${
+              className={`nav-item ${
                 currentCategory.name === category.name && !contactSelected && 'navActive'
                 }`}
               key={category.name}
             >
               <span
+                className="nav-link active"
                 onClick={() => {
                   setCurrentCategory(category);
                   setContactSelected(false);

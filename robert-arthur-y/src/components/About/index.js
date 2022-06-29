@@ -1,7 +1,8 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import crawlSpace from '../../assets/pictures/crawl_space.jpg';
 import bricks from '../../assets/pictures/bricks.jpg';
-import tisMe from '../../assets/pictures/its-me.jpg';
+
 
 
 function About() {
@@ -17,7 +18,6 @@ function About() {
       <p>
         I still enjoy building with my hands, brick by brick. Thats how I look at coding
       </p>
-      <img src={tisMe} className="my-2" style={{ width: "10%" }} alt="selfie of a handsom man" />
       </div>
     </section>
   );

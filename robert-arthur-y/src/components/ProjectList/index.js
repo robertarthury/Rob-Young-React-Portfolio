@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const ProjectList = ({ category }) => {
   const [currentProject, setCurrentProject] = useState();

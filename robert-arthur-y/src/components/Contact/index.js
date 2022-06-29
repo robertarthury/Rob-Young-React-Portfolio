@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import "./styles.css"
+import tisMe from '../../assets/pictures/its-me.jpg';
+
 
 import { validateEmail } from '../../utils/helpers';
+
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -37,8 +41,9 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <section className="contact-section">
       <h1>contactMe</h1>
+      <img src={tisMe} className="my-2" style={{ width: "10%" }} alt="selfie of a handsom man" />
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

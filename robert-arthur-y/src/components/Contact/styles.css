@@ -1,0 +1,13 @@
+:root {
+    --primary: #a89f68;
+    --secondary: #f5c396;
+    --tertiary: #d0b17a; 
+    --light: #f5fdc6;;
+    --dark: #41521f;
+}
+contact-section {
+    color: #41521f;
+    background-image: url('../../assets/pictures/greenBack.png');
+    background-color: #d0b17a;
+}
+

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import About from './components/About/index'
 import Projects from './components/Projects/index'

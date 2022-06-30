@@ -1,12 +1,12 @@
 import React from "react";
 import {useState} from "react";
-import Project from "../Project";
-import Footer from "./Footer";
-import Navigation from "./Navigation";
-import ContactForm from "./pages/ContactForm";
-import AboutMe from "./pages/AboutMe";
-import Resume from "./pages/Resume";
-import "./styles/Header.css"
+import Project from "../Project/index";
+import Footer from "../Footer/index";
+import Navigation from "../Navigation/index";
+import ContactForm from "../ContactForm/index";
+import AboutMe from "../AboutMe";
+import Resume from "../Resume/index";
+
 
 
 function Header() {

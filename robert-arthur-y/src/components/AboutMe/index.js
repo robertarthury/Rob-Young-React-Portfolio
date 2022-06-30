@@ -5,7 +5,7 @@ import bricks from '../../assets/pictures/bricks.jpg';
 
 
 
-function About() {
+function AboutMe() {
   return (
     <section className="m-10 p-10">
       <h1 id="about">aboutMe</h1>
@@ -23,4 +23,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutMe;

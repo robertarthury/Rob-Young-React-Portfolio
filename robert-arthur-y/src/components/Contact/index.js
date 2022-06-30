@@ -63,7 +63,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button className="btn btn-secondary" type="submit">Submit</button>
       </form>
     </section>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {validateEmail} from "../../utils/helpers";
 import {Snackbar, Alert} from "@mui/material/";
 
@@ -69,13 +70,19 @@ function ContactForm() {
         <div className="container">
             <form>
                 <h2 style={{marginBottom: 20, fontSize: 40}}>Contact Me</h2>
-                <label style={{fontSize: 20}} htmlFor="name">Name:</label>
-                <input className="inputStyling" id="name" name="name" type="text" placeholder="Name" value={name} onChange={handleInputChange} onBlur={handleBlurShittyInput}></input>
-                <label style={{fontSize: 20}} htmlFor="email" value={email}>Email:</label>
-                <input className="inputStyling" id="email" name="email" type="text" placeholder="Email" onChange={handleInputChange} onBlur={handleBlurShittyInput}></input>
-                <label style={{fontSize: 20}} htmlFor="message">Message:</label>
-                <textarea className="inputStyling" id="message" name="message" placeholder="Message" value={message} style={{height:300}} onChange={handleInputChange} onBlur={handleBlurShittyInput}></textarea>
-                <button className="button" type="submit" onClick={handleSubmit}>Submit</button>
+                <div className="form-group">
+                    <label style={{fontSize: 20}} htmlFor="name">Name:</label>
+                    <input className="inputStyling form-control" id="name" name="name" type="text" placeholder="Name" value={name} onChange={handleInputChange} onBlur={handleBlurShittyInput}></input>
+                </div>
+                <div className="form-group">
+                    <label style={{fontSize: 20}} htmlFor="email" value={email}>Email:</label>
+                    <input className="inputStyling form-control" id="email" name="email" type="text" placeholder="Email" onChange={handleInputChange} onBlur={handleBlurShittyInput}></input>
+                </div>
+                <div className="form-group">
+                    <label style={{fontSize: 20}} htmlFor="message">Message:</label>
+                    <textarea className="inputStyling form-control" id="message" name="message" placeholder="Message" value={message} style={{height:300}} onChange={handleInputChange} onBlur={handleBlurShittyInput}></textarea>
+                </div>
+                    <button className="button btn btn-primary m-3" type="submit" onClick={handleSubmit}>Submit</button>
             </form>
             <Snackbar open={error} autoHideDuration={6000} onClose={handleErrorClose}>
                 <Alert severity="error" onClose={handleErrorClose} sx={{ width: '100%' }}>{errorMessage}</Alert>

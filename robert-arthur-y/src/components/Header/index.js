@@ -4,8 +4,11 @@ import Project from "../Project/index";
 import Footer from "../Footer/index";
 import Navigation from "../Navigation/index";
 import ContactForm from "../ContactForm/index";
-import AboutMe from "../AboutMe";
+import AboutMe from "../AboutMe/index";
 import Resume from "../Resume/index";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 
 

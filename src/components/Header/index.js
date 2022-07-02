@@ -6,7 +6,7 @@ import Navigation from "../Navigation/index";
 import ContactForm from "../ContactForm/index";
 import AboutMe from "../AboutMe/index";
 import Resume from "../Resume/index";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 

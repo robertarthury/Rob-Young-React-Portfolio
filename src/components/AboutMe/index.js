@@ -1,5 +1,4 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
 import crawlSpace from '../../assets/pictures/crawl_space.jpg';
 import bricks from '../../assets/pictures/bricks.jpg';
 import itsMe from '../../assets/pictures/its-me.jpg';

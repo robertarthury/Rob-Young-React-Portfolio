@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import {validateEmail} from "../../utils/helpers";
 import {Snackbar, Alert} from "@mui/material/";
 
